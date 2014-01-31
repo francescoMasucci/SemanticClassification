@@ -11,15 +11,16 @@ public class Tweet {
 	private boolean isFavorited;
 	private double retweetCount;
 	private String originalUser;
-
+	private String new_field;
 
 	public Tweet() {
 		super();
 	}
 
-	//classe tweet
+	// classe tweet
 	public Tweet(Long id, String text, Date date, boolean isRetweet,
-			Long idAuthor, boolean isFavorited, double retweetCount, String originalUser) {
+			Long idAuthor, boolean isFavorited, double retweetCount,
+			String originalUser) {
 		super();
 		this.id = id;
 		this.text = text;
@@ -86,7 +87,7 @@ public class Tweet {
 	public void setRetweetCount(double retweetCount) {
 		this.retweetCount = retweetCount;
 	}
-	
+
 	public String getOriginalUser() {
 		return originalUser;
 	}
@@ -102,5 +103,5 @@ public class Tweet {
 				+ ", isFavorited=" + isFavorited + ", retweetCount="
 				+ retweetCount + ", originalUser=" + originalUser + "]";
 	}
-	
+
 }
