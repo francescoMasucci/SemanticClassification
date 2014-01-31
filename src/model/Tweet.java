@@ -11,7 +11,7 @@ public class Tweet {
 	private boolean isFavorited;
 	private double retweetCount;
 	private String originalUser;
-	private String new_text;
+
 
 	public Tweet() {
 		super();
